@@ -8,5 +8,6 @@ add_executable(backtesterlocal src/main.cpp
         src/Backtester.h
         src/Trade.h
         src/Strategy.h
-        src/CSVReader.h
-        src/Bar.h)
+        src/IO/DataReader.h
+        src/Bar.h
+        src/IO/DataReader.cpp)

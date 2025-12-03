@@ -1,6 +1,7 @@
 #pragma once
 
 enum class Ticker {
+    IVE,
     PLTR,
     NVDA,
     AAPL,

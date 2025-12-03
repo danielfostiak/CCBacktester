@@ -2,17 +2,18 @@
 #include <vector>
 #include "Trade.h"
 
-using Time = time_t;
-using Amount = double;
-using Volume = double;
+using TimePoint = std::time_t;
+using Price     = double;
+using Volume    = double;
 
 struct Bar {
-    Ticker ticker{};
-    Time timestamp{};
-    Amount ask{};
-    Amount bid{};
-    Volume askVolume{};
-    Volume bidVolume{};
+    Ticker   ticker{Ticker::IVE};
+    TimePoint timestamp{};
+    Price    open{};
+    Price    high{};
+    Price    low{};
+    Price    close{};
+    Volume   volume{};
 };
 
 using Bars = std::vector<Bar>;
